@@ -32,7 +32,8 @@
             box-sizing: border-box;
         }
 
-        .line1, .line2{
+        .line1,
+        .line2 {
             text-indent: 32px;
         }
 
@@ -43,9 +44,201 @@
             margin-top: 20px;
         }
 
-        audio{
-                margin: 0 auto;
+        audio {
+            margin: 0 auto;
+        }
+
+        .item1 {
+            position: absolute;
+            top: -120px;
+            left: 0;
+            animation: myfirst1 20s infinite;
+        }
+
+        @keyframes myfirst1 {
+            from {
+                top: 100%;
+                left: 0;
             }
+
+            to {
+                top: -350px;
+                left: 20%;
+            }
+        }
+
+        .item2 {
+            position: absolute;
+            top: -120px;
+            left: 10%;
+            animation: myfirst2 15s infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes myfirst2 {
+            from {
+                top: 100%;
+                left: 10%;
+            }
+
+            to {
+                top: -350px;
+                left: 13%;
+            }
+        }
+
+        .item3 {
+            position: absolute;
+            top: -120px;
+            left: 15%;
+            animation: myfirst3 12s infinite;
+            animation-delay: 4s;
+        }
+
+        @keyframes myfirst3 {
+            from {
+                top: 100%;
+                left: 15%;
+            }
+
+            to {
+                top: -350px;
+                left: 20%;
+            }
+        }
+        .item4 {
+            position: absolute;
+            top: -120px;
+            left: 0;
+            animation: myfirst4 18s infinite;
+            animation-delay: 5s;
+        }
+
+        @keyframes myfirst4 {
+            from {
+                top: 100%;
+                left: 22%;
+            }
+
+            to {
+                top: -350px;
+                left: 24%;
+            }
+        }
+        .item5 {
+            position: absolute;
+            top: -120px;
+            left: 0;
+            animation: myfirst5 10s infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes myfirst5 {
+            from {
+                top: 100%;
+                left: 27%;
+            }
+
+            to {
+                top: -350px;
+                left: 30%;
+            }
+        }
+        .item6 {
+            position: absolute;
+            top: -120px;
+            left: 34%;
+            animation: myfirst6 8s infinite;
+            animation-delay: 7s;
+        }
+
+        @keyframes myfirst6 {
+            from {
+                top: 100%;
+                left: 0;
+            }
+
+            to {
+                top: -350px;
+                left: 26%;
+            }
+        }
+        .item7 {
+            position: absolute;
+            top: -120px;
+            left: 60%;
+            animation: myfirst 24s infinite;
+            animation-delay: 4s;
+        }
+
+        @keyframes myfirst {
+            from {
+                top: 100%;
+                left: 60%;
+            }
+
+            to {
+                top: -350px;
+                left: 70%;
+            }
+        }
+        .item8 {
+            position: absolute;
+            top: -120px;
+            left: 0;
+            animation: myfirst8 16s infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes myfirst8 {
+            from {
+                top: 100%;
+                left: 70%;
+            }
+
+            to {
+                top: -350px;
+                left: 78%;
+            }
+        }
+        .item9 {
+            position: absolute;
+            top: -120px;
+            left: 0;
+            animation: myfirst9 22s infinite;
+            animation-delay: 4s;
+        }
+
+        @keyframes myfirst9 {
+            from {
+                top: 100%;
+                left: 90%;
+            }
+
+            to {
+                top: -350px;
+                left: 95%;
+            }
+        }
+        .item10 {
+            position: absolute;
+            top: -120px;
+            left: 0;
+            animation: myfirst10 17s infinite;
+            animation-delay: 3s;
+        }
+
+        @keyframes myfirst10 {
+            from {
+                top: 100%;
+                left: 100%;
+            }
+
+            to {
+                top: -350px;
+                left: 90%;
+            }
+        }
     </style>
 </head>
 
@@ -59,15 +252,25 @@
     <div class="music">
         <audio controls="controls" preload="auto" autoplay id="audios" src="./周杰伦-告白气球.mp3" type="audio/mp3"></audio>
     </div>
+    <div class="item1"><img src="./01.png" alt=""></div>
+    <div class="item2"><img src="./02.png" alt=""></div>
+    <div class="item3"><img src="./03.png" alt=""></div>
+    <div class="item4"><img src="./04.png" alt=""></div>
+    <div class="item5"><img src="./05.png" alt=""></div>
+    <div class="item6"><img src="./06.png" alt=""></div>
+    <div class="item7"><img src="./07.png" alt=""></div>
+    <div class="item8"><img src="./08.png" alt=""></div>
+    <div class="item9"><img src="./09.png" alt=""></div>
+    <div class="item10"><img src="./10.png" alt=""></div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
-        var one = `(function love(){for(var i = 0; i < forever; i ++){Console.log('I LOVE LOVE')}})();`;
+        var one = `(function love(){for(var i = 0; i < forever; i ++){Console.log('I LOVE LOVE')}})()`;
         var tow = '“你是年少的欢喜”,“喜欢的少年是你”。从现在开始，你只许疼我一个人，要宠我，不能骗我，答应我的每一件事都要做到，对我讲的每一句话都要真心，不许欺负我，骂我，要相信我.别人欺负我，你要第一时间出来帮我，我开心，你要陪我开心，我不开心，你要哄我开心，永远觉得我最漂亮，做梦也要梦到我，在你的心里只有我。';
         var arr1 = tow.split('');
         var arr2 = one.split('')
         var leng1 = arr1.length;
         var leng2 = arr2.length;
-                $(document).ready(function () {
+        $(document).ready(function () {
             init(leng1, $('.line1'), arr1);
             setTimeout(function () {
                 init(leng2, $('.line2'), arr2);
