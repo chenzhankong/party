@@ -67,22 +67,24 @@
         var arr2 = one.split('')
         var leng1 = arr1.length;
         var leng2 = arr2.length;
-        init(leng1, $('.line1'), arr1);
-        setTimeout(function(){
-            init(leng2, $('.line2'), arr2);
-        },30000)
-        function init(leng, $dom ,arr){
-            var index = 0, t1;
-            t1 = setInterval(auto,200);
-            function auto(){
-                if(index > leng){
-                    clearInterval(t1)
-                }else{
-                    index ++;
-                    $dom.append(arr[index])
+                $(document).ready(function () {
+            init(leng1, $('.line1'), arr1);
+            setTimeout(function () {
+                init(leng2, $('.line2'), arr2);
+            }, 30000)
+            function init(leng, $dom, arr) {
+                var index = 0, t1;
+                t1 = setInterval(auto, 200);
+                function auto() {
+                    if (index > leng) {
+                        clearInterval(t1)
+                    } else {
+                        index++;
+                        $dom.append(arr[index])
+                    }
                 }
             }
-        }
+        })
     </script>
 </body>
 
